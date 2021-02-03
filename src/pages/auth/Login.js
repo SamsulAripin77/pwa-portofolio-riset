@@ -26,14 +26,21 @@ function Login(props) {
         .then(result => {
             setLoading(false)
             console.log(JSON.stringify(result.data));
-            localStorage.setItem("login", JSON.stringify(result.data))
+            localStorage.setItem("login", JSON.stringify(result.data));
+            if (result.data.role === 'admin'){
+                props.history.push('/admin')
+            }
+            else {
+                props.hitory.push('/user')
+            }
         })
         .catch(err => {setError(true)
         setLoading(false)})
     }
 
     return (
-        <form onSubmit={handleSubmit(onSubmit)}>
+        <form onSubmit=
+        {handleSubmit(onSubmit)}>
             <Card title="Login" description="Selamat datang di E-Portofolio Mahasiswa">
             <Input type="email" name="email" title="masukan email anda" register={register}/>
             <Input type="password" name="password" title="masukan password anda" register={register} />
