@@ -9,7 +9,6 @@ function Login(props) {
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState(false);
     const onSubmit = data => {
-        console.log(data)
         let formData = new FormData()
         setLoading(true)
         formData.append('email', data.email)
@@ -25,17 +24,16 @@ function Login(props) {
         })
         .then(result => {
             setLoading(false)
-            console.log(JSON.stringify(result.data));
+            console.log(JSON.stringify(result.data.role));
             localStorage.setItem("login", JSON.stringify(result.data));
             if (result.data.role === 'admin'){
                 props.history.push('/admin')
             }
             else {
-                props.hitory.push('/user')
+                props.history.push('/user')
             }
         })
-        .catch(err => {setError(true)
-        setLoading(false)})
+        .catch((error) => alert(error.response.data.message));
     }
 
     return (
