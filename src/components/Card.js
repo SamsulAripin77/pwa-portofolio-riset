@@ -20,7 +20,7 @@ function card({title,description,children}) {
                         </div>
                         <div className="pt-4 flex items-center space-x-4">
                         <Button label="Batal" type="cancel" color="red"/>
-                        <Button label="submit" type="Submit" color="blue"/>
+                        <Button label="Submit" type="submit" color="blue"/>
                         </div>
                     </div>
                 </div>

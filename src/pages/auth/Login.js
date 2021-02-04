@@ -14,7 +14,7 @@ function Login(props) {
         formData.append('email', data.email)
         formData.append('password', data.password)
         axios({
-            url: 'http://localhost:8000/api/auth/login',
+            url: 'http://riset-portofolio-api.herokuapp.com/api/auth/login',
             method: 'POST',
             data: formData,
             headers:{
@@ -24,7 +24,7 @@ function Login(props) {
         })
         .then(result => {
             setLoading(false)
-            console.log(JSON.stringify(result.data.role));
+            console.log(JSON.stringify(result.data.token));
             localStorage.setItem("login", JSON.stringify(result.data));
             if (result.data.role === 'admin'){
                 props.history.push('/admin')
