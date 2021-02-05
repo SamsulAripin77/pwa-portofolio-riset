@@ -41,9 +41,9 @@ function Landing(props) {
           <h3 className="text-2xl mb-8 text-gray-200">
             Tambah data portofolio anda dengan meningkatkan kualifiasi diri
           </h3>
-          <button className="bg-white font-bold rounded-full py-4 px-8 shadow-lg uppercase tracking-wider">
-            Learn More
-          </button>
+          <Link to="/login" className="bg-white font-bold rounded-full py-4 px-8 shadow-lg uppercase tracking-wider">
+            Login
+          </Link>
         </div>
       </div>
       <section className="container mx-auto px-6 p-10">
@@ -95,7 +95,7 @@ function Landing(props) {
           </div>
         </div>
       </section>
-      <section className="bg-gray-100">
+      <section className="bg-gray-100 mx-auto">
          <h2 className="text-4xl font-bold text-center text-gray-800 pt-3">
             Portofolio Terbaru
           </h2>

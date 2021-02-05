@@ -27,10 +27,10 @@ function Login(props) {
             console.log(JSON.stringify(result.data.token));
             localStorage.setItem("login", JSON.stringify(result.data));
             if (result.data.role === 'admin'){
-                props.history.push('/admin')
+                props.history.push('/sertifikasi/create')
             }
             else {
-                props.history.push('/user')
+                props.history.push('/sertifikasi/create')
             }
         })
         .catch((error) => alert(error.response.data.message));

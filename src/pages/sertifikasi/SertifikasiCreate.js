@@ -20,7 +20,9 @@ function SertifikasiCreate(props) {
         formData.append('user_id', 1)
         getFetch('/portofolio/sertifikasi','POST',formData)
         .then(response => {alert(response.data.message)})
-        .then(()=> e.target.reset())
+        .then(()=> {
+            e.target.reset()
+        })
         .catch(() =>{
             setFail(true);
         })
