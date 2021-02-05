@@ -1,5 +1,6 @@
 import React from "react";
 import {Link} from 'react-router-dom'
+import CardProfile from './components/CardProfile';
 
 function Landing(props) {
   return (
@@ -47,22 +48,20 @@ function Landing(props) {
       </div>
       <section className="container mx-auto px-6 p-10">
         <h2 className="text-4xl font-bold text-center text-gray-800 mb-8">
-          Features
+          Tentang E-Portofolio
         </h2>
         <div className="flex items-center flex-wrap mb-20">
           <div className="w-full md:w-1/2">
             <h4 className="text-3xl text-gray-800 font-bold mb-3">
-              Exercise Metrics
+              Online Portofolio
             </h4>
             <p className="text-gray-600 mb-8">
-              Our Smart Health Monitoring Wristwatch is able to capture you
-              vitals while you exercise. You can create different category of
-              exercises and can track your vitals on the go.
+             Dengan E-Portofolio kamu dapat mendokumentasikan prestasi non-akademik yang didapat selema perkuliahan, dan dapat kamu gunakan sewaktu-waktu, untuk kepentingan kerja, magang, pengajuan beasiswa dan lain-lain.
             </p>
           </div>
-          <div className="w-full md:w-1/2">
+          <div className="w-full md:2-1/2">
             <img
-              src="https://www.dropbox.com/s/mimcvn6zxtoruis/health.svg?raw=1"
+              src="images.png"
               alt="Monitoring"
             />
           </div>
@@ -75,21 +74,17 @@ function Landing(props) {
             />
           </div>
           <div className="w-full md:w-1/2 pl-10">
-            <h4 className="text-3xl text-gray-800 font-bold mb-3">Reporting</h4>
+            <h4 className="text-3xl text-gray-800 font-bold mb-3">Upgrade Kualifikasi</h4>
             <p className="text-gray-600 mb-8">
-              Our Smart Health Monitoring Wristwatch can generate a
-              comprehensive report on your vitals depending on your settings
-              either daily, weekly, monthly, quarterly or yearly.
+              E-Portolio dapat kamu isi secara mandiri, dan hasilnya dapat dipublikasi ke orang terdekatmu, 
             </p>
           </div>
         </div>
         <div className="flex items-center flex-wrap mb-20">
           <div className="w-full md:w-1/2">
-            <h4 className="text-3xl text-gray-800 font-bold mb-3">Syncing</h4>
+            <h4 className="text-3xl text-gray-800 font-bold mb-3">Multi Platform</h4>
             <p className="text-gray-600 mb-8">
-              Our Smart Health Monitoring Wristwatch allows you to sync data
-              across all your mobile devices whether iOS, Android or Windows OS
-              and also to your laptop whether MacOS, GNU/LInux or Windows OS.
+              E-Portofolio Juga sangat mudah diisi dan dapat diakses dari berbagai perangkat, kamu jadi bisa mengisi data portofolio dimanapun dan kapanpu
             </p>
           </div>
           <div className="w-full md:w-1/2">
@@ -101,171 +96,36 @@ function Landing(props) {
         </div>
       </section>
       <section className="bg-gray-100">
-        <div className="container mx-auto px-6 py-20">
-          <h2 className="text-4xl font-bold text-center text-gray-800 mb-8">
-            Testimonials
+         <h2 className="text-4xl font-bold text-center text-gray-800 pt-3">
+            Portofolio Terbaru
           </h2>
+        <div className="container flex sm:justify-center mx-auto px-6 py-20">
+       
           <div className="flex flex-wrap">
             <div className="w-full md:w-1/3 px-2 mb-4">
-              <div className="bg-white rounded shadow py-2">
-                <p className="text-gray-800 text-base px-6 mb-5">
-                  Monitoring and tracking my health vitals anywhere I go and on
-                  any platform I use has never been easier.
-                </p>
-                <p className="text-gray-500 text-xs md:text-sm px-6">John Doe</p>
-              </div>
+               <CardProfile
+                name="Surya Ningrat"
+                jurusan= "Teknik Infromatika"
+                img ="/avatar/avatar-1.png"
+               />
             </div>
             <div className="w-full md:w-1/3 px-2 mb-4">
-              <div className="bg-white rounded shadow py-2">
-                <p className="text-gray-800 text-base px-6 mb-5">
-                  As an Athlete, this is the perfect product for me. I wear my
-                  Smart Health Monitoring Wristwatch everywhere i go, even in
-                  the bathroom since it's waterproof.
-                </p>
-                <p className="text-gray-500 text-xs md:text-sm px-6">Jane Doe</p>
-              </div>
+               <CardProfile
+                  name="Jojo Ramadhan"
+                  jurusan= "Teknik Infromatika"
+                  img ="/avatar/avatar-2.png"
+               />
             </div>
             <div className="w-full md:w-1/3 px-2 mb-4">
-              <div className="bg-white rounded shadow py-2">
-                <p className="text-gray-800 text-base px-6 mb-5">
-                  I don't regret buying this wearble gadget. One of the best
-                  gadgets I own!.
-                </p>
-                <p className="text-gray-500 text-xs md:text-sm px-6">James Doe</p>
-              </div>
+               <CardProfile
+                  name="Jamalludin"
+                  jurusan= "Teknik Infromatika"
+                  img ="/avatar/avatar-3.png"
+               />
             </div>
           </div>
         </div>
       </section>
-
-      <section className="bg-blue-300">
-        <div className="container mx-auto px-6 text-center py-20">
-          <h2 className="mb-6 text-4xl font-bold text-center text-white">
-            Limited in Stock
-          </h2>
-          <h3 className="my-4 text-2xl text-white">
-            Get yourself the Smart Health Monitoring Wristwatch!
-          </h3>
-          <button className="bg-white font-bold rounded-full mt-6 py-4 px-8 shadow-lg uppercase tracking-wider">
-            Pre Order
-          </button>
-        </div>
-      </section>
-
-      <footer className="bg-gray-100">
-        <div className="container mx-auto px-6 pt-10 pb-6">
-          <div className="flex flex-wrap">
-            <div className="w-full md:w-1/4 text-center md:text-left ">
-              <h5 className="uppercase mb-6 font-bold">Links</h5>
-              <ul className="mb-4">
-                <li className="mt-2">
-                  <Link
-                    to="#"
-                    className="hover:underline text-gray-600 hover:text-orange-500"
-                  >
-                    FAQ
-                  </Link>
-                </li>
-                <li className="mt-2">
-                  <Link
-                    to="#"
-                    className="hover:underline text-gray-600 hover:text-orange-500"
-                  >
-                    Help
-                  </Link>
-                </li>
-                <li className="mt-2">
-                  <Link
-                    to="#"
-                    className="hover:underline text-gray-600 hover:text-orange-500"
-                  >
-                    Support
-                  </Link>
-                </li>
-              </ul>
-            </div>
-            <div className="w-full md:w-1/4 text-center md:text-left ">
-              <h5 className="uppercase mb-6 font-bold">Legal</h5>
-              <ul className="mb-4">
-                <li className="mt-2">
-                  <Link
-                    to="#"
-                    className="hover:underline text-gray-600 hover:text-orange-500"
-                  >
-                    Terms
-                  </Link>
-                </li>
-                <li className="mt-2">
-                  <Link
-                    to="#"
-                    className="hover:underline text-gray-600 hover:text-orange-500"
-                  >
-                    Privacy
-                  </Link>
-                </li>
-              </ul>
-            </div>
-            <div className="w-full md:w-1/4 text-center md:text-left ">
-              <h5 className="uppercase mb-6 font-bold">Social</h5>
-              <ul className="mb-4">
-                <li className="mt-2">
-                  <Link
-                    to="#"
-                    className="hover:underline text-gray-600 hover:text-orange-500"
-                  >
-                    Facebook
-                  </Link>
-                </li>
-                <li className="mt-2">
-                  <Link
-                    to="#"
-                    className="hover:underline text-gray-600 hover:text-orange-500"
-                  >
-                    Linkedin
-                  </Link>
-                </li>
-                <li className="mt-2">
-                  <Link
-                    to="#"
-                    className="hover:underline text-gray-600 hover:text-orange-500"
-                  >
-                    Twitter
-                  </Link>
-                </li>
-              </ul>
-            </div>
-            <div className="w-full md:w-1/4 text-center md:text-left ">
-              <h5 className="uppercase mb-6 font-bold">Company</h5>
-              <ul className="mb-4">
-                <li className="mt-2">
-                  <Link
-                    to="#"
-                    className="hover:underline text-gray-600 hover:text-orange-500"
-                  >
-                    Official Blog
-                  </Link>
-                </li>
-                <li className="mt-2">
-                  <Link
-                    to="#"
-                    className="hover:underline text-gray-600 hover:text-orange-500"
-                  >
-                    About Us
-                  </Link>
-                </li>
-                <li className="mt-2">
-                  <Link
-                    to="#"
-                    className="hover:underline text-gray-600 hover:text-orange-500"
-                  >
-                    Contact
-                  </Link>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </footer>
     </div>
   );
 }
